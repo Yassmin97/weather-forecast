@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#background-video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.bg-white {
+    background: linear-gradient(rgba(148, 187, 233, 100), rgba(228, 236, 255, 100));
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+}
+
+h3 {
+    /*color: #206eff;*/
+    font-size: 23px;
+    padding: 10px;
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+.menu {
+    flex: 1;
+    text-align: right;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #39A7FF;
+}
+
+h1 {
+    font-size: 57px;
+    background: linear-gradient(rgba(206, 224, 255, 100), rgba(62, 117, 241, 100));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px;
+}
+
+.wrapper-child h3,
+.wrapper-child p {
+    background: rgba(255, 255, 255, 0.507);
+    max-width: 370px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+#date-time {
+    padding-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: linear-gradient(to right, rgba(57, 167, 255, 100), rgba(26, 93, 218, 100));
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 8px rgba(255, 255, 255, 0.171);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.wrapper-child {
+    flex: 1;
+}
+
+#weather-container {
+    background: rgba(255, 255, 255, 0.3);
+    max-width: 400px;
+    height: 180px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    margin-top: 100px;
+    margin-right: 50px;
+}
+
+h2,
+label {
+    color: #fff;
+    margin: 8px 0;
+}
+
+input {
+    width: calc(90% - 16px);
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-top: 45px;
+}
+
+button {
+    background: linear-gradient(to right, rgba(57, 167, 255, 100), rgba(26, 93, 218, 100));
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    width: 140px;
+    height: 45px;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px;
+    margin-top: 30px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 8px rgba(255, 255, 255, 0.171);
+}
+
+/*weather info page*/
+.text-container {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text-container h1 {
+    font-size: 40px;
+    background: linear-gradient(rgba(24, 83, 191, 100), rgba(10, 63, 184, 100));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 8px;
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+.day {
+    margin-top: 20px;
+    background: linear-gradient(rgba(104, 182, 241, 0.9), rgba(139, 197, 255, 0.78));
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 180px;
+    transition: transorm 0.3s ease;
+    flex-direction: column;
+    height: 240px;
+}
+
+.day:hover {
+    transform: scale(1.05);
+    color: #083994;
+}
+
+#day1-date, #day2-date, #day3-date, #day4-date, #day5-date {
+    font-size: 18px;
+    color: #083994; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+    text-transform: uppercase; 
+    text-align: left;
+    
+}
+
+.day p{
+    margin: 10px 0;
+    color: #083994;
+    font-size: 18px;
+}
+
+.day img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.bt {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background: linear-gradient(to right, rgba(57, 167, 255, 100), rgba(26, 93, 218, 100));
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s ease;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+

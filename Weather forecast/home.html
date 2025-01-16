@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-image">
+    <video autoplay loop muted playsinline id="background-video"> <source src="Images/background-video.mp4" type="video/mp4"></video>
+
+    <section class="header">
+        <nav>
+            <a href="home.html"> <img src="Images/logo.png" alt="logo" class="logo"></a>
+            <div class="menu" id="Menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="weather-info.html">Weather</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="wrapper">
+            <div class="wrapper-child">
+                <h1>Weather in Stockholm - Today</h1>
+                <h3>Stockholm</h3>
+                <p id="temperature">Temperatur: <span id="current-temp"></span></p>
+                <p id="date-time">Date and Time: <span id="current-date"></span>, <span id="current-time"></span></p>
+                <a class="button" href="weather-info.html">Weather for the next 5 days</a>
+            </div>
+          <!-- <div class="wrapper-child" id="weather-container">
+                <input type="text" id="city" placeholder="Enter city">
+                <button onclick="getWeather()">Search</button>
+                <button id="location" onclick="getLocation()">Current Location</button>
+            </div>--> 
+
+            </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

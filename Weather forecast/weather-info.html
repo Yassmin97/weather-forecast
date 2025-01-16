@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-information</title>
+    <link rel="stylesheet" href="home.html">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-white">
+    <section class="header">
+        <nav>
+            <a href="home.html"> <img src="Images/logo.png" alt="logo" class="logo"></a>
+            <div class="menu" id="Menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="weather-info.html">Weather</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="text-container">
+            <h1>Weather forecast for the next 5 days</h1>
+            <div class="forecast">
+                <div class="day">
+                    <h3 id="day1-date"></h3>
+                    <img src="Images/cloud.png" alt="day1-icon">
+                    <p>Min: <span id="day1-min"></span> <br> Max: <span id="day1-max"></span></p>
+                </div>
+                <div class="day">
+                    <h3 id="day2-date"></h3>
+                    <img src="Images/cloudy.png" alt="day2-icon">
+                    <p>Min: <span id="day2-min"></span> <br> Max: <span id="day2-max"></span></p>
+                </div>
+                <div class="day">
+                    <h3 id="day3-date"></h3>
+                    <img src="Images/cloudy.png" alt="day3-icon">
+                    <p>Min: <span id="day3-min"></span> <br> Max: <span id="day3-max"></span></p>
+                </div>
+                <div class="day">
+                    <h3 id="day4-date"></h3>
+                    <img src="Images/cloudy.png" alt="day4-icon">
+                    <p>Min: <span id="day4-min"></span> <br> Max: <span id="day4-max"></span></p>
+                </div>
+                <div class="day">
+                    <h3 id="day5-date"></h3>
+                    <img src="Images/cloudy-rain.png" alt="day5-icon">
+                    <p>Min: <span id="day5-min"></span> <br> Max: <span id="day5-max"></span></p>
+                </div>
+            </div>
+            <a class="bt" href="home.html">Todays Weather</a>
+
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
